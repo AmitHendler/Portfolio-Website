@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Countdown Timer</title>
+</head>
+<body>
+  <div class="title-container">
+    <h1 class="title">Countdown Timer by Amit Hendler</h1>
+  </div>
+
+  <div class="countdown-container">
+    <div class="countdown-item">
+      <label for="datepicker">Select Date:</label>
+      <input type="date" id="datepicker">
+    </div>
+    <div class="countdown-item">
+      <label for="timepicker">Select Time:</label>
+      <input type="time" id="timepicker">
+    </div>
+    <button onclick="setCustomCountdown()">Set Countdown</button>
+    <button onclick="startCountdown()">Start</button>
+    <button onclick="stopCountdown()">Stop</button>
+    <button onclick="resetCountdown()">Reset</button>
+  </div>
+
+  <div class="countdown-container">
+    <div class="countdown-item" id="days">00</div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item" id="hours">00</div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item" id="minutes">00</div>
+    <div class="countdown-separator">:</div>
+    <div class="countdown-item" id="seconds">00</div>
+  </div>
+  <button onclick="downloadProject()">Download Project</button>
+  <script src="script.js"></script>
+</body>
+</html>

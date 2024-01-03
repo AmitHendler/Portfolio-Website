@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Telephone Service</title>
+</head>
+<body>
+    <section>
+        <div class="line_top"></div>
+        <div>
+            <a class="button_whatsapp" aria-label="Chat on whatsapp" href="tel: +972526058818" alt="chat on whatsapp">
+            <div class="button whatsapp"> 
+                <img class="icon" src="./images/whatsapp.svg" alt=""></div> 
+            </a>
+        </div>
+        <div class="form_box">
+            <div class="box_text">
+                <h1 class="title">ייעוץ חינם</h1>
+                <p class="text">בשיחת ייעוץ חינמית אחת תוכלו לקבל יעוץ מקצועי
+</p>
+            </div>
+            <form class="form" action="#" method="get">
+                <div class="box_input">
+                    <div class="box_name">
+                        <div class="form_name ">שם מלא </div>
+                        <input type="text" id="name" title="שם" name="name" value="" required minlength="3" maxlength="20" pattern="[a-zA-Z א-ת а-яА-я]+"/>
+                    </div>
+                    <div class="box_mail">
+                        <div class="form_name">Email</div>
+                        <input type="email" id="email" name="email" value="" required/> 
+                    </div>
+                </div>
+                <div class="box_area">
+                    <div class="form_name">הודעה</div>
+                <textarea id="massage" name="message" value="" maxlength="300"></textarea>
+                </div>
+                
+                <button class="button" type="submit" id="submit_btn" onclick="drawShelves(); return false;">שליחה</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="contact_icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <div class="button" > <img class="icon1 icon " src="./images/facebook.svg" alt="facebook"></div> 
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+            <div class="button" > <img class="icon2 icon" src="./images/instagram_icon.svg" alt="instagram"></div>     
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+            <div class="button" > <img class="icon3 icon" src="./images/linkedin_icon.svg" alt="linkedin"></div>     
+            </a>
+            <a href="tel: +972526058818">
+            <div class="button" > <img class="icon4 icon" src="./images/phone_icon.svg" alt="telephone"></div> 
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

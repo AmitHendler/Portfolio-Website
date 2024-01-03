@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Heebo;
+    color: #fff;
+}
+
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 590px;
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box{
+width: 69vw;
+margin: 0 auto;
+}
+.form_box{
+    position: relative;
+    float: right;
+    background:#1A1A1AD4;
+    width: 570px;
+    height: 640px;
+    margin-top: 150px;
+    padding:75px 75px 0 75px; 
+}
+.form_title{
+    text-align: center;
+    font-size: 28pt;
+    padding-bottom: 20px;
+}
+.form_text{
+    text-align: right;
+    font-size: 15pt;
+    padding-bottom: 45px;
+}
+.form_name{
+    text-align: right;
+    font-size: 13pt;
+}
+.box_name{
+    padding-bottom: 20px;
+}
+input{
+    width: 420px;
+    height: 50px;
+    font-size: 16pt;
+    text-align: right;
+    padding: 0 5px 0 5px;
+    background: #fff;
+    border: 3px solid #fff;
+}
+.button{
+    float: right;
+    font-size: 16pt;
+    font-weight: bold;
+    background-color: #D31C75;
+    width: 166px;
+    height: 50px;
+    border: none;
+    margin: 30px 0 20px 0;
+}
+
+@media screen and (max-width:960px){
+    .container{
+        height: 30vh;
+        background-size: cover;
+    }
+    .box{
+        width: 90vw;
+    }
+    .form_box{
+        width: 90vw;
+        height: 550px;
+        margin-top: 75px;
+        padding:4vw; 
+    }
+    .form_title{
+        font-size: 20pt;
+    }
+    .form_text{
+        font-size: 15pt;
+    }
+    .form_name{
+        font-size: 13pt; 
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        font-size: 13pt;
+    }
+}

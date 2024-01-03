@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Delivery</title>
+</head>
+
+<body>
+    <header class="main">
+        <a aria-label="Chat on whatsapp" href="tel: +972526058818" alt="chat on whatsapp">
+            <div class=" button whatsapp"> <img class="icon" src="./images/whatsapp.svg" alt=""></div>
+        </a>
+        <div class="main_box">
+            <div class="main_contant">
+                <h1 class="main_title">הובלות ברחבי הארץ</h1>
+                <p class="main_text">ברוכים הבאים לשירותי ההובלות המתקדמים שלנו!
+                </p>
+            </div>
+        </div>
+    </header>
+    <section class="cards">
+        <div class="box_card1 box_card">
+            <img src="images/loc_icon.png" alt="local" class="img_card">
+            <h3 class="title_card">כל הארץ</h3>
+            <p class="text_title">אנו מובילים סחורות מקריית שמונה ועד אילת</p>
+        </div>
+        <div class="box_card2 box_card">
+            <img src="images/card_icon.png" alt="card" class="img_card">
+            <h3 class="title_card">צוות</h3>
+            <p class="text_title">צוות מקצועי ואחראי</p>
+        </div>
+        <div class="box_card3 box_card">
+            <img src="images/wand_icon.png" alt="wand" class="img_card">
+            <h3 class="title_card">פירוק והרכבה</h3>
+            <p class="text_title">פירוק והרכבה</p>
+        </div>
+        <div class="box_card4 box_card">
+            <img src="images/briefcase_icon.png" alt="case" class="img_card">
+            <h3 class="title_card">ביטחון ואמינות</h3>
+            <p class="text_title">ביטחון ואמינות מספר 1 בתחום</p>
+        </div>
+    </section>
+    <section class="form_map">
+        <div class="form_box">
+            <div class="form">
+                <h1 class="form_title">שלח בקשה עכשיו</h1>
+                <form class="form_main " action="#" method="get">
+                    <div class="form_name pt-3 pb-2">שם מלא</div>
+                    <input type="text" id="name" title="שם" name="name" value="" required minlength="3" maxlength="20"
+                        pattern="[a-zA-Z א-ת]+" />
+                    <div class="form_name">Email</div>
+                    <input type="email" id="email" name="email" value="" required />
+                    <div class="form_name">הודעה</div>
+                    <textarea id="massage" name="message" value="" maxlength="300"></textarea>
+                    <button class="button" type="submit" id="submit_btn"
+                        onclick="drawShelves(); return false;">שליחה</button>
+                </form>
+            </div>
+        </div>
+        <div class="map_box">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54084.90605016234!2d34.75604668943773!3d32.08799755302287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ca6193b7c1f%3A0xc1fb72a2c0963f90!2z0KLQtdC70Ywt0JDQstC40LI!5e0!3m2!1sru!2sil!4v1691169113993!5m2!1sru!2sil"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="contact_icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <div class="button"> <img class="icon1 icon " src="./images/facebook.svg" alt="facebook"></div>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <div class="button"> <img class="icon2 icon" src="./images/instagram_icon.svg" alt="instagram"></div>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <div class="button"> <img class="icon3 icon" src="./images/linkedin_icon.svg" alt="linkedin"></div>
+            </a>
+            <a href="tel: +972526058818">
+                <div class="button"> <img class="icon4 icon" src="./images/phone_icon.svg" alt="telephone"></div>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

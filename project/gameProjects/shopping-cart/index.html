@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Shopping Cart by Amit H</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="css/styles.css">
+  
+  </head>
+  <body>
+ <header class="intro">
+ <h1>Shopping Cart by Amit H</h1>
+ <p>A shopping cart system in Bootstrap 4 and JavaScript.</p>
+
+ 
+  
+      
+ <main>
+     
+     <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+          <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Products</h4>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product">
+                <img class="product-img" src="./img/bottle.jpg" alt="prd1" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info bold product-name">Water Bootle</h5>
+                  <p class="card-text text-success product-price">200 ILS.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                    data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product">
+                <img class="product-img" src="./img/protector.jpg" alt="prd2" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name">Phone Protector</h5>
+                  <p class="card-text text-success product-price">300 ILS.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button"
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+              <div class="shadow-sm card mb-3 product">
+                <img class="product-img" src="./img/usb.jpg" alt="prd3" onmouseover="animateImg(this)"
+                onmouseout="normalImg(this)"/>
+                <div class="card-body">
+                  <h5 class="card-title text-info product-name">Boat Micro USB</h5>
+                  <p class="card-text text-success product-price">200 ILS.</p>
+                  <button class="btn badge badge-pill badge-secondary mt-2 float-right" type="button" 
+                  data-action="add-to-cart">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+          <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">Cart</h4>
+          <div class="cart"></div>
+        </div>
+      </div>
+    </div>    
+    <a href="https://drive.google.com/drive/folders/17_AMFt0kEoJ2jH-ceJgBfTH4XWp70LEB?usp=drive_link" download="downloaded_file">Download Project</a>
+ </main>
+ 
+      
+  
+  <script src="./js/script.js"></script>
+  
+  </body>
+</html>

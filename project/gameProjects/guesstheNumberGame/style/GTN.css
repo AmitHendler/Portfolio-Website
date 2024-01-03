@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 320px;
+    background: linear-gradient(135deg, #988686, #D1D0D0);
+    
+      
+    
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  #guessCounter {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3909bd;
+    margin-bottom: 10px;
+  }
+  
+  #guessInput {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  #guessButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #483C32;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #guessButton:hover {
+    background-color: #000000;
+  }
+
+  #playAgainButton {
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #playAgainButton:hover {
+    background-color: #990000;
+  }

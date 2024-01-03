@@ -1,0 +1,118 @@
+@include desktop{
+    .main{
+        .main_box{
+        background-size: 200px ;
+            .main_contant{
+                padding-top: 130px;
+                    .main_title {
+                    font-size: 3rem;
+                    }
+                    .main_text{
+                        font-size: 1.3rem;
+                        padding-bottom: 130px;
+                    }
+            }
+        }
+    }
+    .cards{
+    width: 100vw;
+    padding: 5px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+    flex-wrap: wrap-reverse;
+        .box_card{
+            width: 90%;
+        }
+    }
+    .form_map{
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+        .form_box{
+            width: 100vw;
+            padding: 15px 0 70px 0;
+            .form{
+                width: 90vw;
+                .form_title{
+                padding-top: 50px;
+                font-size: 2.5rem;
+                padding-bottom: 5px;
+            }
+            .form_text{
+                font-size: 1.2rem;
+                padding-bottom: 15px;
+            }
+            & input, textarea{
+                height: 50px;
+                background-color: #ffffff;
+                border: 1px solid #fafafa;
+                border-bottom: 4px solid #0EE1DA;
+            }
+            & textarea{
+                height: 100px;
+            }
+            .button{
+                font-size: 1rem;
+                height: 50px;
+                border: none;
+            }
+        }
+    }
+    .map_box{
+        width: 100vw;
+        height: 370px;
+            .map{
+            width: 80%;
+            }
+        }
+    }
+    footer{
+        border-bottom: 10px solid $aqua-color;
+        .contact_icons{
+            a .button{
+                width: 65px;
+                height: 65px;
+                margin: 30px;
+                
+            }
+        }
+    }
+}
+
+@include tablet{
+    .main{
+        .main_box{
+        width: 80vw;
+        background: url(../images/background_box.png) no-repeat padding-box;
+        background-position-x: right;
+        background-position-y: 15%;
+        background-size: 25%;
+            .main_contant{
+                padding-top: 170px;
+                width: 80vw;
+                    .main_text{
+                        padding-bottom: 70px;
+                    }
+            }
+        }
+    }
+}
+
+@include mobile{
+    .whatsapp{
+        display: none;
+    }
+    footer{
+        .contact_icons{
+            padding: 40px 0 40px 0;
+            a .button{
+                width: 45px;
+                height: 45px;
+                margin: 10px;
+            }
+        }
+    }
+}

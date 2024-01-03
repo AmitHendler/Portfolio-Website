@@ -1,0 +1,62 @@
+@import "vars";
+
+@mixin card{
+    .box_card{
+        width: 70%;
+        height: 50%;
+        background-color: #F8F8F8;
+        padding: 70px;
+        margin: 10px;
+        text-align: center;
+        .img_card{
+            width: 45px;
+            height: 45px;
+        }
+        .title_card{
+            font-size: 1.5rem;
+            color: $aqua-color;
+        }
+        .text_card{
+            font-size: 10rem;
+        }
+    }
+}
+
+@mixin icons{
+    .button{
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    background-color: $aqua-color;
+    box-shadow: 1px 3px 10px #0000009c;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+        .icon{
+            padding: 10px;
+            width: 90%;
+        }
+    }
+    .button:hover{
+        transform: scale(1.5);
+    }
+}
+
+@mixin desktop{
+    @media (max-width: 1200px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: 868px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media (max-width: 660px){
+        @content;
+    }
+}

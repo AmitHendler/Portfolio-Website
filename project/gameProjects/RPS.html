@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./rps.css">
+  <title>Rock, Paper & Scissors</title>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Rock, Paper & Scissors</h1>
+    
+<div id="confetti"></div>
+
+    <div id="scoreboard">
+      <div class="score" id="playerScore">Player: 0</div>
+      <div class="score" id="computerScore">Computer: 0</div>
+    </div>
+    <div id="game">
+      <button class="choice rock" onclick="makeChoice('rock')">
+        <img src="images/rock.png" alt="Rock">
+      </button>
+      <button class="choice paper" onclick="makeChoice('paper')">
+        <img src="images/paper.png" alt="Paper">
+      </button>
+      <button class="choice scissors" onclick="makeChoice('scissors')">
+        <img src="images/scissors.png" alt="Scissors">
+      </button>
+    </div>
+    <div id="result"></div>
+    <button id="resetButton" onclick="resetGame()">Reset Game</button>
+    <button id="tryAgainButton" style="display: none;">Try Again</button>
+    <button onclick="downloadProject()">Download Project</button>
+  </div>
+  <script src="./rps.js"></script>
+</body>
+</html>
