@@ -1,0 +1,1038 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Heebo;
+}
+a{
+  text-decoration: none;
+  color: #222222;
+}
+li{
+  list-style: none;
+}
+
+/* =============== HEADER AND NAVBAR ============*/
+header {
+  margin: 0 auto; 
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  width: 100vw;
+  box-shadow: 2px 3px 10px #d6d5d5;
+  border-top: 3px solid #1AE0EC;
+  z-index: 1;
+}
+.navbar{
+  margin: 0 auto;
+  width: 80VW;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo_img{
+  width: 70px;
+  margin: 4px;
+  border-radius: 30px;
+}
+.logo_text{
+  font-size: 24pt;
+  
+}
+.menu {
+  display: flex;
+}
+.menu li{
+  padding: 5px 15px;
+  
+}
+  .link{
+    display: block;
+    font-size: 18pt;
+    font-weight: 500;
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: all 0.5s;
+  }
+  .link:hover {
+    color: #1ae0ec;
+    transform: scale(1.2);
+  }
+#checkbox_toggle  {
+  display: none;
+}
+
+
+/* ======================= OPEN ====================== */
+#open {
+  margin: 0 auto;
+  width: 100vw;
+  background: #13e8f163;
+}
+.open_box{
+  width: 80vw;
+  position: relative;
+  margin: 0 auto;
+
+}
+.open_title {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  font-size:  5rem;
+  font-weight: 700;
+
+}
+.open_text, .open_text_project {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0 100px 0;
+  width: 55vw;
+  font-size: 15pt;
+}
+
+.open_text_project {
+  padding: 10px 0 10px 0;
+}
+
+.buttons_box{
+  display: block;
+  width: 600px;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.open_button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background: #1ae0ec;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 600;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.open_button:hover{
+  transform: scale(0.8);
+}
+
+/* ======================= SKILL BOX ====================== */
+.skills {
+  box-shadow: 5px 10px 10px #d6d5d5;
+}
+.skills_box, .skills_box_project {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  flex-flow: wrap;
+  overflow: hidden;
+}
+.skills_box_project{
+  width: 50vw;
+}
+.skill_img {
+  transition: 0.7s;
+}
+.skill_img:hover {
+  transform: scale(1.3);
+}
+/* ======================= ABOUT ====================== */
+#about {
+  width: 100vw;
+}
+.about_img {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 50%;
+}
+.about_title {
+  margin: 0 auto;
+  font-size: 27pt;
+  text-align: center;
+  padding-top: 25px;
+}
+.about_text {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  width: 65vw;
+  font-size: 16pt;
+}
+.about_button {
+  display: block;
+    width: 260px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  background: #1ae0ec;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 15pt;
+  font-weight: 600;
+  border: none;
+  
+}
+
+/* ================Project_page, project_box===================== */
+.project_box{
+  margin: 0 auto;
+  width: 100vw;
+  background-color: #EBFEFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .project_HereNow{
+    width: 60vw;
+    height: 30vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/Here&Now.png) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+  .project_improveYourself{
+    width: 60vw;
+    height: 30vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/ImproveYourself.png) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+  .project_promotion{
+    width: 60vw;
+    height: 30vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/Promotion.png) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+  .project_travelTours{
+    width: 60vw;
+    height: 35vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/TravelTours.png) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+  .project_telephoneService{
+    width: 65vw;
+    height: 45vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/Telephoneservice.png) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+  .project_Delivery{
+    width: 65vw;
+    height: 45vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/Delivery.png) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+
+  /*
+  .games-projects-trivia{
+    width: 65vw;
+    height: 45vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/trivia-img.jpg) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+
+  .games-project-gtn{
+    width: 65vw;
+    height: 45vw;
+    box-shadow: 0 0 30px #272727;
+    background: url(../images/GTN-img.jpg) center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 150px 0 150px 0;
+  }
+
+/* ======================= GALLERY PROJECT ====================== */
+
+#gallery {
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  width: 100vw;
+  padding-bottom: 180px;
+}
+
+.gallery_title {
+  text-align: center;
+  font-size: 27pt;
+  padding-top: 100px;
+}
+.gallery_text {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 45vw;
+  font-size: 15pt;
+  
+}
+.gallery_projects {
+  margin: 0 auto;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.project {
+  width: 405px;
+  height: 518px;
+  margin: 30px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px #d6d5d5;
+  border-radius: 10px;
+  transition: 1s;
+  overflow: hidden;
+}
+.project:hover {
+  box-shadow: 0px 0px 10px 5px #adadad;
+}
+.project_img {
+  background-size: cover;
+  display: block;
+  width: 405px;
+  height: 223px;
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: #000000;
+}
+.project_img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+.project_title {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 37px;
+  font-size: 17pt;
+  direction: rtl;
+}
+.project_text {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 12pt;
+  direction: rtl;
+}
+.project_skills {
+  display: flex;
+  justify-content: center;
+}
+.project_skills .skill_img {
+  display: block;
+  width: 35px;
+}
+.project_button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 158px;
+  height: 30px;
+  background: #1ae0ec;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 11pt;
+  font-weight: 800;
+  border: none;
+
+}
+/* ======================= CONTACT FORM ====================== */
+#contact_form {
+  margin: 0 auto;
+  width: 100vw;
+  height: 950px;
+  background-color: #3a3a3a;
+  background-image: url(../images/Rectangle\ 41.png);
+  background-repeat: no-repeat;
+  background-size: 38% auto;
+  padding-bottom: 50px;
+}
+
+.form_box{
+  width: 85vw;
+}
+
+.form {
+  width: 550px;
+  float: right;
+}
+
+.form_title {
+  display: block;
+  text-align: right;
+  font-size: 30pt;
+  color: #fff;
+  padding-top: 150px;
+}
+
+.form_text {
+  display: block;
+  padding-top: 5px;
+  font-size: 14pt;
+  color: #fff;
+  text-align: right;
+}
+
+.form_main {
+  padding-top: 47px;
+  text-align: right;
+}
+.form_name {
+  font-size: 16pt;
+  color: #fff;
+}
+
+#name,
+#phone,
+#email {
+  width: 548px;
+  height: 50px;
+  text-align: right;
+  font-size: 14pt;
+}
+
+#massage {
+  width: 548px;
+  height: 150px;
+  text-align: right;
+  font-size: 14pt;
+  resize: none;
+}
+
+form #name,
+#phone,
+#email,
+#massage {
+  background-color: #fff;
+  padding: 5px;
+  border: none;
+  border-bottom: 3px solid #1ae0ec;
+}
+
+#submit_btn {
+  display: block;
+  width: 166px;
+  height: 50px;
+  background: #1ae0ec;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 17pt;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 33px;
+}
+/* ======================= FOOTER CONTACTS ====================== */
+.contacts{
+  margin: 0 auto;
+  width: 100vw;
+  background-color: #1ae0ec;
+}
+.contact_box {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.contact{
+  width: 150px;
+  height: 100px;
+  margin: 50px;
+}
+.contact img{
+  display: block;
+  margin: 0 auto;
+  transition: 0.7s;
+}
+.contact img:hover{
+  transform: scale(1.2);
+}
+.contact p{
+  display: block;
+  text-align: center;
+  color: #222222;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+.contact_sign {
+  position: static;
+  width: 100vw;
+  height: 40px;
+  background-color: #3a3a3a;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  border-bottom: 4px solid  #1ae0ec;
+}
+.sign, .rights {
+  display: block;
+  color: #1ae0ec;
+  font-size: 12pt;
+}
+
+
+@media screen and (max-width: 960px){ 
+  .navbar{
+    width: 90vw;
+  }
+  .logo_img{
+    width: 70px;
+    padding: 5px;
+  }
+  .logo_text{
+    text-align: center;
+    width: 150px;
+    font-size: 16pt;
+  }
+
+  [for=checkbox_toggle]{
+    display: block;
+    float: right;
+    font-size: 30pt;
+    font-weight: 800;
+    text-align: center;
+    color: #1ae0ec;
+    cursor: pointer;
+  }
+
+  [for=checkbox_toggle]::before{
+    content: '☰';
+  }
+
+  .menu {
+  display: none;
+  max-height: 0;
+  position: absolute;
+  background-color: #fff;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin-top: 60px;
+}
+
+.menu li{
+  display: block;
+  background-color: #fff;
+  box-shadow : 3px 5px 5px #d6d5d5;
+  
+}
+  #checkbox_toggle:checked + label + .menu{
+    display: block;
+    max-height: 100%;
+    animation: show 0.5s ease-in;
+    
+  }
+
+  #checkbox_toggle:checked + [for=checkbox_toggle]::before{
+    content: '⛌';
+  }
+  @keyframes show {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }   
+  .open_title{
+    padding-top: 100px;
+    font-size: 26pt;
+  }
+  .open_text, .open_text_project {
+    display: block;
+    width: 80vw;
+    font-size: 12pt;
+    padding: 10px 0 80px 0;
+  }
+
+  .open_text_project {
+    padding: 10px 0 10px 0;
+  }
+
+.buttons_box{
+  padding-top: 10px;
+  width: 80vw;
+  padding-bottom: 35px;
+}
+.open_button{
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  font-size: 12pt;
+  font-weight: 500;
+}
+.skills_box {
+  width: 80vw;
+}
+.skill_img{
+  width: 60px;
+}
+
+#about {
+  width: 100vw;
+}
+.about_img {
+  display: block;
+  width: 100px;
+  margin-top: 50px;
+}
+.about_title {
+  font-size: 26pt;
+  padding-top: 15px;
+}
+.about_text {
+  padding-top: 10px;
+  font-size: 12pt;
+}
+.about_button {
+  margin-top: 30px;
+  width: 170px;
+  height: 35px;
+  font-size: 12pt;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+.project_preview{
+  margin: 50px 0 50px 0;
+  height: 40vw;
+}
+
+#gallery {
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  width: 100vw;
+  padding-bottom: 70px;
+}
+
+.gallery_title {
+  text-align: center;
+  font-size: 26pt;
+  padding-top: 50px;
+}
+.gallery_text {
+  padding-bottom: 30px;
+  width: 80vw;
+  font-size: 12pt;
+}
+
+.gallery_projects {
+  width: 100vw;
+}
+
+.project {
+  width: 300px;
+  height: 518px;
+  margin: 30px;
+}
+
+.project_img {
+  width: 100%;
+  background-size: center;
+}
+
+.project_title {
+  padding-top: 37px;
+  font-size: 17pt;
+}
+.project_text {
+  padding: 20px;
+  font-size: 12pt;
+}
+
+.project_skills .skill_img {
+  display: block;
+  width: 35px;
+}
+.project_button {
+  margin-top: 0px;
+  width: 150px;
+  height: 30px;
+  font-size: 10pt;
+}
+#contact_form{
+  height: 850px;
+    background-size: 33% auto;
+}
+  .form_box{
+  width: 92vw;
+  }
+
+.form {
+  width: 80vw;
+}
+.form_title {
+  text-align: right;
+  font-size: 26pt;
+  color: #fff;
+  padding-top: 150px;
+}
+
+.form_text {
+  padding-top: 50px;
+  font-size: 14pt;
+}
+
+.form_name {
+  font-size: 12pt;
+}
+
+  #name,
+  #phone,
+  #email {
+    width: 80vw;
+    height: 40px;
+    font-size: 10pt;
+  }
+
+  #massage {
+    width: 80vw;
+    height: 100px;
+    font-size: 10pt;
+  }
+
+  #submit_btn {
+  width: 105px;
+  height: 40px;
+  font-size: 16pt;
+  font-weight: 800;
+  margin-top: 33px;
+  }
+
+  .contact p{
+    font-size: 10pt; 
+  }
+
+  .sign, .rights {
+    font-size: 9pt;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .logo_img{
+    width: 43px;
+    padding: 5px;
+  }
+  .logo_text{
+    width: 120px;
+    font-size: 12pt;
+  }
+  [for=checkbox_toggle]{
+    font-size: 26pt;
+  }
+  .menu {
+  margin-top: 50px;
+  }
+
+  .open_title{
+    padding-top: 50px;
+    font-size: 26pt;
+  }
+  .open_text, .open_text_project{
+    font-size: 11pt;
+    padding: 10px 0 50px 0;
+  }
+
+  .open_text_project{
+    padding: 10px 0 5px 0;
+  }
+.buttons_box{
+  padding-top: 5px;
+  width: 80vw;
+  padding-bottom: 80px;
+}
+.open_button{
+  margin: 5px;
+  width: 134px;
+  height: 26px;
+  font-size: 9pt;
+  font-weight: 500;
+}
+.skills_box {
+  width: 80vw;
+}
+.skill_img{
+  width: 45px;
+}
+
+.about_img {
+  display: block;
+  width: 120px;
+  margin-top: 90px;
+}
+.about_title {
+  font-size: 19pt;
+  padding-top: 15px;
+}
+.about_text {
+  width: 85vw;
+  font-size: 11pt;
+}
+.about_button {
+  margin-top: 21px;
+  width: 135px;
+  height: 29px;
+  background: #1ae0ec;
+}
+
+.project_box{
+  height: 331px;
+}
+
+#gallery {
+  margin: 0 auto;
+  background-color: #f6f6f6;
+  width: 100vw;
+  padding-bottom: 70px;
+}
+
+.gallery_title {
+  text-align: center;
+  font-size: 19pt;
+  padding-top: 70px;
+}
+.gallery_text {
+  padding-bottom: 30px;
+  width: 80vw;
+  font-size: 11pt;
+}
+
+.gallery_projects {
+  width: 100vw;
+}
+
+.project {
+  width: 100vw;
+  margin: 15px;
+}
+
+.project_img {
+  height: 188px;
+}
+
+.project_title {
+  padding-top: 30px;
+  font-size: 14pt;
+}
+.project_text {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 12pt;
+  direction: rtl;
+}
+.project_skills {
+  display: flex;
+  justify-content: center;
+}
+.project_skills .skill_img {
+  width: 25px;
+}
+.project_button {
+  margin-top: 10px;
+  width: 130px;
+  height: 25px;
+  font-size: 8pt;
+  font-weight:600;
+}
+
+#contact_form{
+  height: 640px;
+    background-size: 44% auto;
+}
+
+.form_box{
+  width: 92vw;
+}
+
+.form {
+  width: 80vw;
+}
+.form_title {
+  text-align: right;
+  font-size: 18pt;
+  color: #fff;
+  padding-top: 150px;
+}
+
+.form_text {
+  padding-top: 8px;
+  font-size: 11pt;
+}
+
+.form_name {
+  font-size: 9pt;
+}
+
+  #name,
+  #phone,
+  #email {
+    height: 28px;
+    font-size: 10pt;
+  }
+
+  #massage {
+    width: 80vw;
+    height: 58px;
+    font-size: 10pt;
+  }
+
+  #submit_btn {
+  width: 94px;
+  height: 28px;
+  font-size: 9pt;
+  font-weight: 800;
+  margin-top: 3px;
+  }
+
+  .contact_box {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 0 50px 0;
+  }
+  .contact{
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+
+  }
+  .comtact img{
+    display: block;
+    width: 30px;
+  }
+  .contact p{
+    text-align: center;
+    font-size: 10pt; 
+  }
+
+  .contact_sign{
+    height: 28px;
+    padding: 0 10px 0 10px;
+    border-bottom: 1px solid #1ae0ec;
+  }
+  .sign, .rights {
+    font-size: 7pt; 
+  }
+}
+
+/* ================== GAMES SECTION ====================== */
+
+.hr-sections{
+  height: 2px;
+}
+
+.name-header {
+  padding: 20px;
+  color: black ; 
+  border-radius: 8px;
+  text-align: center;
+  font-size: 26pt;
+  padding-top: 50px;
+  font-weight: bold;
+}
+
+.text-header {
+  text-align: center;
+  font-size: 16pt;
+  color: black;
+  
+}
+
+#games-projects {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+
+.games-projects-trivia, 
+.games-projects-gtn {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.project:hover {
+  box-shadow: 0px 0px 10px 5px #adadad;
+}
+
+.project_img {
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 150px;
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.project_img:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+.project_title {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 17pt;
+  direction: rtl;
+}
+
+.project_text {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 12pt;
+}
